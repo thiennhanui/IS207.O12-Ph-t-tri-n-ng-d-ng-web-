@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LA MAISION</title>
+    <meta charset="UTF-8">
+    <style>
+      
+        table {
+            width: 100%; 
+        }
+        td {
+            width: 25%; 
+            padding: 10px; 
+        }
+    </style>
+    <style>
+        .center-heading {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="center-heading">LA MAISION</h1>
+    <table border="1">
+        <tr>
+            <td>Trang chủ</td>
+            <td>Sản phẩm</td>
+            <td>Về chúng tôi</td>
+            <td>Liên hệ</td>
+        </tr>
+    </table>
+    
+    <form action="creat_data.php" method="post">
+    </form>
+    <h2>Bạn có tài khoản?</h2>
+
+
+
+<style>
+   
+    label {
+        display: inline-block;
+        margin-right: 10px; 
+    }
+    
+    input[type="radio"] {
+        vertical-align: middle;
+    }
+</style>
+
+
+<form action="add_data.php" method="post">
+    <label for="ten">Ten:</label>
+    <input type="text" id="ten" name="name" required><br><br>
+    <p>Giới tính:</p>
+    <input type="radio" id="Nu" name="sex" value="Nu"> Nữ
+    <input type="radio" id="Nam" name="sex" value="Nam"> Nam
+
+    <label for="birthday">Ngay sinh:</label>
+    <input type="date" id="birthday" name="birthday">
+    <br><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email"> <br><br>
+    <label for="mk">Mật khau:</label>
+    <input type="password" id="mk" name="password"> <br><br>
+    <label for="phone">Số điện thoại:</label>
+    <input type="tel" id="phone" name="id">
+
+    <br><br>
+    <button type="submit">Đăng ký</button>
+</form>
+<script>
+    var lastChecked = null;
+    
+    function changeValue(value) {
+        var currentChecked = document.querySelector('input[name="sex"]:checked');
+        if (currentChecked !== lastChecked && lastChecked !== null) {
+            lastChecked.checked = false;
+        }
+        lastChecked = currentChecked;
+        document.querySelector('input[name="sex"]:checked').value = value;
+    }
+</script>
+
+<table border="0">
+    <tr>
+        <td>Giới thiệu</td>
+        <td>Thông tin liên hệ</td>
+        <td>Liên hệ</td>
+        <td>Hỗ trợ</td>
+    </tr>
+    <tr>
+        <td>Tiệm hoa MQ chuyên cung cấp các sản phẩm hoa tươi trong nước và nhập khẩu từ Hà Lan, Pháp, Ecuador, Nhật Bản, Malaysia, Trung Quốc... Tiêm hoa luôn mong muốn được lắng nghe mọi phản hồi và ý kiến đóng góp của khách hàng để ngày càng hoàn thiện hơn về chất lượng, nhận được nhiều hơn sự tin tưởng và ủng hộ của khách hàng mỗi lần ghé thăm.</td>
+        <td>132 Nguyễn Hoàng, P. An Phú, TP. Thủ Đức (Quận 2 cũ), TP. Hồ Chí Minh<br>
+            090 717 0030<br>
+            mqflowershop@gmail.com</td>
+        <td>Sản phẩm khuyến mãi<br>
+            Sản phẩm nổi bật<br>
+            Tất cả sản phẩm</td>
+        <td>Tìm kiếm<br>
+            Giới thiệu<br>
+            Chính sách đổi trả<br>
+            Chính sách bảo mật<br>
+            Điều khoản<br>
+            Dịch vụ<br>
+            Liên hệ</td>
+    </tr>
+</table>
+​
+
+
+
+</body>
+<html>

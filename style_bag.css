@@ -1,0 +1,28 @@
+      
+      table {
+          width: 100%; 
+      }
+      
+      td {
+          width: 25%; 
+          padding: 10px; 
+      }
+
+      .center-heading {
+          text-align: center;
+      }
+
+.table-container {
+    max-height: 400px; /* Độ cao tối đa của bảng, điều chỉnh theo nhu cầu */
+    overflow-y: scroll; /* Tạo thanh cuộn dọc */
+}
+
+.fixed-table {
+    width: 100%;
+    border-collapse: collapse; /*đường viền (border) của các ô trong một bảng HTML tương tác với nhau.*/
+}
+
+.fixed-table th, .fixed-table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+}

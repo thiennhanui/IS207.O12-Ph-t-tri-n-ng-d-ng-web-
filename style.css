@@ -1,0 +1,81 @@
+/* Thiết lập độ rộng và màu nền của thanh công cụ */
+header {
+    background-color: #fcfcfc;
+    color: rgb(207, 213, 22);
+    padding: 10px; /* tạo khảng cách xung quanh */ /*khoảng cách giữa nội dung và viền.*/
+    text-align: center; /* căng chinhr vb */
+}
+
+.container-fluid {
+    background-color: #ccb1b1; /* Màu xám */
+    white-space: 100vh; /* xử lý khoảng cách */
+}
+.row {
+    width: 100%;
+}
+
+/* Thiết lập kiểu button */
+.btn {
+    padding: 10px 20px; /* trên dưới trái phải */
+    background-color: #007bff;
+    color: white;
+    border: none;
+}
+
+/* Thiết lập dropdown menu */
+.dropdown-menu {
+    display: none; /* ẩn khi chưa nhấn */
+    list-style-type: none; /* loại bỉ các dấu ...*/
+    padding: 0;
+}
+
+/* Hiển thị dropdown menu khi hover vào button */
+.dropdown:hover .dropdown-menu { /* hover : di chuột qua --> display = block*/
+    display: block;
+}
+
+/* Thiết lập các mục trong dropdown menu */
+
+/* anh cac san pham //////////////////////////////////////////////////////*/
+.table-container {
+    max-height: 400px; /* Độ cao tối đa của bảng, điều chỉnh theo nhu cầu */
+    overflow-y: scroll; /* Tạo thanh cuộn dọc */
+}
+
+.fixed-table {
+    width: 100%;
+    border-collapse: collapse; /*đường viền (border) của các ô trong một bảng HTML tương tác với nhau.*/
+}
+
+.fixed-table th, .fixed-table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+}
+
+
+/* trang info ****************************************************************************************************************/
+.form-container {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 2px solid #000;
+}
+
+.form-image {
+    border: 2px solid #000;
+    text-align: left;
+}
+.form-p {
+    text-align: left;
+}
+.form {
+    border: 2px solid #000;
+    padding: 20px;
+    text-align: left;
+}
+
+/* Định dạng cho nút submit */
+.form input[type="submit"] {
+    margin-top: 20px;
+    justify-content: flex-end;
+     /* Điều chỉnh khoảng cách giữa các nút */
+}

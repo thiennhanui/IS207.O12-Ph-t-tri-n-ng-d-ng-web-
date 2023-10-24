@@ -1,0 +1,63 @@
+header {
+    background-color: #fcfcfc;
+    color: rgb(207, 213, 22);
+    padding: 10px; /* tạo khảng cách xung quanh */ /*khoảng cách giữa nội dung và viền.*/
+    text-align: center; /* căng chinhr vb */
+}
+.container-fluid {
+    background-color: #ccb1b1; /* Màu xám */
+    white-space: 100vh; /* xử lý khoảng cách */
+}
+.row {
+    width: 100%;
+}
+/* Thiết lập kiểu button */
+.btn {
+    padding: 10px 20px; /* trên dưới trái phải */
+    background-color: #007bff;
+    color: white;
+    border: none;
+}
+
+/* Thiết lập dropdown menu */
+.dropdown-menu {
+    display: none; /* ẩn khi chưa nhấn */
+    list-style-type: none; /* loại bỉ các dấu ...*/
+    padding: 0;
+}
+
+/* Hiển thị dropdown menu khi hover vào button */
+.dropdown:hover .dropdown-menu { /* hover : di chuột qua --> display = block*/
+    display: block;
+}
+/* style.css */
+.form-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch; /* Để các phần tử con cùng chiếm độ cao */
+    border-bottom: 2px solid #000;
+}
+
+.form-image {
+    border: 2px solid #000;
+    text-align: left;
+    flex: 1;
+}
+
+.form-p {
+    text-align: left;
+}
+
+.form {
+    border: 2px solid #000;
+    padding: 20px;
+    text-align: left;
+    flex: 1; /* Để phần này chiếm cùng chiều cao với form-image */
+}
+
+/* Định dạng cho nút submit */
+.form input[type="submit"][name="gio"]  {
+    margin-left : 200px ;
+    margin-top: 200px;
+}
